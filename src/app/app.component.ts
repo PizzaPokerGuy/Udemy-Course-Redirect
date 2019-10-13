@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Course } from 'udemy-coupon-redirect';
+import { Course } from 'projects/udemy-coupon-redirect/src/public-api';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +8,6 @@ import { Course } from 'udemy-coupon-redirect';
 })
 export class AppComponent {
   public courses: Course[] = [
-    { courseKey: 'javascript', name: '', urlTitle: 'javascript-360' }
+    { courseKey: 'javascript', urlTitle: 'javascript-360' }
   ];
 }

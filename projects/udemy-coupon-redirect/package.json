@@ -11,5 +11,8 @@
     "@angular/common": "^8.2.9",
     "@angular/core": "^8.2.9",
     "@angular/router": "^8.2.9"
+  },
+  "dependencies": {
+    "@angular/elements": "^8.2.10"
   }
 }

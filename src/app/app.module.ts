@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { UdemyCouponRedirectModule } from 'projects/udemy-coupon-redirect/src/public-api';
@@ -16,6 +16,7 @@ import { UdemyCouponRedirectModule } from 'projects/udemy-coupon-redirect/src/pu
       path: '',
     }], {})
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
