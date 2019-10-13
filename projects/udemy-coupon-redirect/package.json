@@ -1,7 +1,7 @@
 {
   "name": "udemy-coupon-redirect",
-  "version": "0.0.3-beta",
-  "description": "Easy to use course coupon redirect for udemy.",
+  "version": "0.0.2",
+  "description": "Easy to use course coupon redirect for Udemy.",
   "author": "Dylan Israel",
   "repository": {
     "type": "git",
