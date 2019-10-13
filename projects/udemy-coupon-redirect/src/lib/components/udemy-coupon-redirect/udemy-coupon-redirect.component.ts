@@ -9,36 +9,24 @@ import { Course } from '../../models/course.model';
 })
 export class UdemyCouponRedirectComponent implements OnInit {
   @Input() public courses: Course[] = [];
-  public ticker = '.';
 
   constructor(private route: ActivatedRoute) { }
 
   public ngOnInit() {
-    setInterval(() => {
-      this.updateTicker();
-    }, 500);
-
-    this.redirectIfValidCourse();
+    this.init();
   }
 
-  private updateTicker() {
-    switch (this.ticker.length) {
-      case 1:
-        this.ticker = '..';
-        break;
+  private init() {
+    this.route.root.queryParams.subscribe((params) => {
+      const courseQueryString = params.course;
 
-      case 2:
-        this.ticker = '...';
-        break;
-
-      case 3:
-        this.ticker = '.';
-        break;
-    }
+      if (courseQueryString) {
+        this.redirectIfValidCourse(courseQueryString);
+      }
+    });
   }
 
-  public redirectIfValidCourse(): void {
-    const courseQueryString = this.route.snapshot.queryParams.course;
+  public redirectIfValidCourse(courseQueryString: string): void {
     const couponCode = this.getCurrentMonthsCode();
 
     for (const course of this.courses) {

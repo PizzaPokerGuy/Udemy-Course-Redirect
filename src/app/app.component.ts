@@ -7,5 +7,7 @@ import { Course } from 'udemy-coupon-redirect';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public courses: Course[] = [];
+  public courses: Course[] = [
+    { courseKey: 'javascript', name: '', urlTitle: 'javascript-360' }
+  ];
 }
