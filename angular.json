@@ -120,6 +120,41 @@
           }
         }
       }
+    },
+    "udemy-coupon-redirect": {
+      "projectType": "library",
+      "root": "projects/udemy-coupon-redirect",
+      "sourceRoot": "projects/udemy-coupon-redirect/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/udemy-coupon-redirect/tsconfig.lib.json",
+            "project": "projects/udemy-coupon-redirect/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/udemy-coupon-redirect/src/test.ts",
+            "tsConfig": "projects/udemy-coupon-redirect/tsconfig.spec.json",
+            "karmaConfig": "projects/udemy-coupon-redirect/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/udemy-coupon-redirect/tsconfig.lib.json",
+              "projects/udemy-coupon-redirect/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "udemy-redirect"
 }

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Course } from 'src/app/models/enums/course.enum';
+import { Course } from 'projects/udemy-coupon-redirect/src/lib/models/enums/course.enum';
 
 @Injectable()
 export class RedirectService {

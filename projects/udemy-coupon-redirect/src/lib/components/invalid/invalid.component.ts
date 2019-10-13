@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { RedirectService } from 'src/app/services/redirect/redirect.service';
+import { RedirectService } from 'projects/udemy-coupon-redirect/src/lib/services/redirect/redirect.service';
 
 @Component({
-  selector: 'app-invalid',
+  selector: 'lib-invalid',
   templateUrl: './invalid.component.html',
   styleUrls: ['./invalid.component.scss']
 })
