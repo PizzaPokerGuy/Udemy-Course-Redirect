@@ -1,6 +1,12 @@
 {
   "name": "udemy-coupon-redirect",
   "version": "0.0.1",
+  "description": "Easy to use course coupon redirect for udemy.",
+  "author": "Dylan Israel",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PizzaPokerGuy/Udemy-Course-Redirect.git"
+  },
   "peerDependencies": {
     "@angular/common": "^8.2.9",
     "@angular/core": "^8.2.9",

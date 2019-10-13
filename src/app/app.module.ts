@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
+import { UdemyCouponRedirectModule } from 'udemy-coupon-redirect';
+
 
 @NgModule({
   declarations: [
@@ -8,8 +10,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
+    UdemyCouponRedirectModule
   ],
-  providers: [],
+  providers: [RedirectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

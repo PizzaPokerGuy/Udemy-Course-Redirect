@@ -1,24 +1,3 @@
-# UdemyCouponRedirect
+# Udemy Coupon Redirect
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.9.
-
-## Code scaffolding
-
-Run `ng generate component component-name --project udemy-coupon-redirect` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project udemy-coupon-redirect`.
-> Note: Don't forget to add `--project udemy-coupon-redirect` or else it will be added to the default project in your `angular.json` file. 
-
-## Build
-
-Run `ng build udemy-coupon-redirect` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Publishing
-
-After building your library with `ng build udemy-coupon-redirect`, go to the dist folder `cd dist/udemy-coupon-redirect` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test udemy-coupon-redirect` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Work in Progress
