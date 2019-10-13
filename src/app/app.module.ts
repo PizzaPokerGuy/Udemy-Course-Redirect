@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { UdemyCouponRedirectModule, RedirectService } from 'udemy-coupon-redirect';
+import { UdemyCouponRedirectModule } from 'udemy-coupon-redirect';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -10,9 +11,9 @@ import { UdemyCouponRedirectModule, RedirectService } from 'udemy-coupon-redirec
   ],
   imports: [
     BrowserModule,
-    UdemyCouponRedirectModule
+    UdemyCouponRedirectModule,
+    RouterModule.forRoot([], {})
   ],
-  providers: [RedirectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Course } from 'udemy-coupon-redirect';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
+  public courses: Course[] = [];
 }

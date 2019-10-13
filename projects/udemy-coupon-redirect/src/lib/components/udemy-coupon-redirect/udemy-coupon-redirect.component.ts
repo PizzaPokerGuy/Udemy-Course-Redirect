@@ -5,10 +5,10 @@ import { Course } from '../../models/course.model';
 @Component({
   selector: 'lib-invalid',
   templateUrl: './udemy-coupon-redirect.component.html',
-  styleUrls: ['./udemy-coupon-redirect.scss']
+  styleUrls: ['./udemy-coupon-redirect.component.scss']
 })
 export class UdemyCouponRedirectComponent implements OnInit {
-  @Input() public courses: Course[];
+  @Input() public courses: Course[] = [];
   public ticker = '.';
 
   constructor(private route: ActivatedRoute) { }
